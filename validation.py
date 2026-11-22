@@ -8,9 +8,7 @@ def validate_request(text, key, mode):
 
     # Условие 2: ключ должен быть целым числом от 1 до 25
     key_ok = (
-        isinstance(key, int)
-        and not isinstance(key, bool)
-        and 1 <= key <= 25
+        isinstance(key, int) and not isinstance(key, bool) and 1 <= key <= 25
     )
 
     # Условие 3: режим должен быть допустимым
